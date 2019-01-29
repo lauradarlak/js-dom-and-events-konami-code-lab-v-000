@@ -9,7 +9,7 @@ function init() {
   const body = document.querySelector('body');
   body.addEventListener('keydown', function(e) {
     const key = parseInt(e.detail || e.which);
-
+    console.log(key)
     if (key === code[index]) {
       index++;
 
@@ -23,3 +23,5 @@ function init() {
     }
   });
 }
+
+init();
